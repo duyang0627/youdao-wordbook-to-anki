@@ -18,13 +18,14 @@ XML format as of September 2016:
 </wordbook>
 '''
 
+# For each word, the function put "word" + "phonetic" to the card front, "translation" to card back
 def convertDict(xmlFilename, ankiFilename):
-    ''' Read the xml file as a string '''
+    # Read the content of the xml file into a string
     xmlFile = open(xmlFilename, 'r');
     dictXml = xmlFile.read();
     xmlFile.close();
     
-    ''' Begin parsing the xml '''
+    # Begin parsing the xml
     dom =  parseString(dictXml);
     
     ankiFile = open(ankiFilename, 'w')
