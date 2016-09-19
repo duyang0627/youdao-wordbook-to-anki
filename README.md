@@ -2,9 +2,6 @@
 
 A simple tool to convert youdao xml file into tab separated txt file for importing to Anki. 
 
-Note that by default, youdao exports one word three times into its xml file. So no worries 
-if anki throws warnings that words are imported twice. 
-
 ## Usage
 Please make sure python is installed in your system. After downloading the file, Execute 
 the following command in command line:  
